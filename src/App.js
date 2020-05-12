@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import { renderRoutes } from 'react-router-config';
 import './App.css';
-import N1 from './components/N1'
-import Photoslide from './components/photoslide';
+import routes from './routes'
+
 
 function App() {
   return (
-        <Photoslide />
+    {renderRoutes(routes)}
   );
 }
 
